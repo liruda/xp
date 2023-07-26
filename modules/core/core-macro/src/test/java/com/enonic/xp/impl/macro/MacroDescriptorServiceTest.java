@@ -1,6 +1,7 @@
 package com.enonic.xp.impl.macro;
 
 import java.time.Instant;
+import java.util.Locale;
 
 import org.junit.jupiter.api.Test;
 
@@ -27,6 +28,7 @@ public class MacroDescriptorServiceTest
     protected void initialize()
         throws Exception
     {
+        Locale.setDefault(new Locale( "en", "US"));
         addApplication( "myapp1", "/apps/myapp1" );
         addApplication( "myapp2", "/apps/myapp2" );
 
